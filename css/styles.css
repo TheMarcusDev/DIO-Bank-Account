@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'fixedsys_excelsior_3.01Rg';
+    src: url('fsex300-webfont.woff2') format('woff2'), url('fsex300-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #040c06;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    color: #288d40;
+}
+
+h4 {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-decoration: underline;
+}
+
+#terminal {
+    margin-top: 6%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#terminal2 {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.terminalWrapper {
+    height: 800px;
+}
+
+.terminalWrapper2 {
+    height: 800px;
+}
+
+.terminalConteudo {
+    width: 800px;
+    padding-top: 7%;
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.terminalConteudo2 {
+    width: 107%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.terminalConteudo3 {
+    width: 107%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.terminalConteudo4 {
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.terminalDadosConta {
+    width: 100%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.terminalDadosContaConfirma {
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.textField {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    padding: 0px;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    width: 600px;
+    text-decoration: none;
+}
+
+.textField2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    width: 130px;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.textField3 {
+    padding-right: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.textField4 {
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    text-decoration: none;
+}
+
+.textField5 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    width: 50%;
+    text-decoration: none;
+    justify-content: flex-start;
+    padding-left: 18px;
+}
+
+.textField6 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    width: 50%;
+    text-decoration: none;
+    justify-content: flex-start;
+    padding-left: 26px;
+}
+
+.textField7 {
+    padding-right: 44px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    text-decoration: none;
+}
+
+.textField8 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    text-decoration: none;
+}
+
+.textField9 {
+    background-color: rgba(0, 0, 0, 0);
+    color: #299b44;
+    padding: 10px;
+    font-family: 'fixedsys_excelsior_3.01Rg', Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-width: 0px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

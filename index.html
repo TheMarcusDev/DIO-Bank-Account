@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMarcusDEV Bank Admin 1.0</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <div class="terminal" id="terminal">
+        <h4>CREATE NEW ACCOUNT</h4>
+        <div class="terminalWrapper">
+            <div class="terminalConteudo">
+                <p class="textField">ACCOUNT TYPE:</p>
+                <input type="text" class="textField" id="inputBoxAccount" value="(1) Checking Account (2) Savings Account (3) Students Account" maxlength="1" type='number'>
+                <br>
+                <p class="textField">CLIENT:</p>
+                <input type="text" class="textField" id="inputBoxName" value="Type in the account handler's name.">
+                <br>
+            </div>
+            <div class="terminalConteudo2">
+                <p class="textField3">AGENCY #:</p>
+                <input type="number" class="textField2" id="inputBoxAgency" min="1" max="9999" value="0001" onKeyUp="if(this.value>9999){this.value='INVALID PROMPT!';}else if(this.value=='0000'){this.value='INVALID PROMPT!';}" onKeyDown="if(this.value=='0000'){this.value='INVALID PROMPT!';}"></input>
+                <p class="textField3">ACCOUNT #:</p>
+                <input type="number" class="textField2" id="inputBoxAccountNumber" min="1" max="999999" value="250001" onKeyUp="if(this.value>999999){this.value='INVALID PROMPT!';}else if(this.value=='000000'){this.value='INVALID PROMPT!';}" onKeyDown="if(this.value=='000000'){this.value='INVALID PROMPT!';}"></input>
+            </div>
+            <div class="terminalConteudo3">
+                <p class="textField3">CONFIRM ACCOUNT CREATION:</p>
+                <input type="text" class="textField2" id="inputBoxConfirmation" maxlength="1" value="Y/N?">
+            </div>
+        </div>
+    </div>
+    <div class="terminal2" id="terminal2">
+        <h4>ACCOUNTS</h4>
+        <div class="terminalWrapper2" id="terminalWrapper2">
+            <div class="terminalConteudo4">
+                <p class="textField4">ACCOUNT #</p>
+                <p class="textField4">AGENCY #</p>
+                <p class="textField5">NAME</p>
+                <p class="textField4">ACCOUNT TYPE</p>
+            </div>
+            <div class="terminalDadosContaWrapper" id="terminalDadosContaWrapper"></div>
+            <div class="terminalDadosConta">
+                <p class="textField7">250001</p>
+                <p class="textField7">0001</p>
+                <p class="textField6">Linus Torvalds</p>
+                <p class="textField8">Checking Account</p>
+            </div>
+            <div class="terminalDadosContaConfirma">
+                <h4 class="textField9">CREATE NEW ACCOUNT?</h4>
+                <input type="text" class="textField9" id="inputBoxConfirmation2" maxlength="1" value="Y/N?">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/scripts.js"></script>
+
+</html>
