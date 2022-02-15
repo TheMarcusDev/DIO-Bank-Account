@@ -174,26 +174,10 @@ inputBoxAgency.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
         if (agencyNumber <= 9999 && agencyNumber >= 1) {
             document.getElementById('inputBoxAccountNumber').type = 'text';
-            if (agencyNumber < 10) {
-                agencyNumber = agencyNumber.toString();
-                agencyNumber = '000' + document.getElementById('inputBoxAgency').value;
-                document.getElementById('inputBoxAccountNumber').focus();
-                inputClearAccountNumber();
-            } else if (agencyNumber >= 10 && agencyNumber < 100) {
-                agencyNumber = agencyNumber.toString();
-                agencyNumber = '00' + document.getElementById('inputBoxAgency').value;
-                document.getElementById('inputBoxAccountNumber').focus();
-                inputClearAccountNumber();
-            } else if (agencyNumber >= 100 && agencyNumber < 1000) {
-                agencyNumber = agencyNumber.toString();
-                agencyNumber = '0' + document.getElementById('inputBoxAgency').value;
-                document.getElementById('inputBoxAccountNumber').focus();
-                inputClearAccountNumber();
-            } else {
-                agencyNumber = document.getElementById('inputBoxAgency').value;
-                document.getElementById('inputBoxAccountNumber').focus();
-                inputClearAccountNumber();
-            }
+            agencyNumber = agencyNumber.toString();
+            agencyNumber = document.getElementById('inputBoxAgency').value;
+            document.getElementById('inputBoxAccountNumber').focus();
+            inputClearAccountNumber();
         } else if (document.getElementById('inputBoxAgency').value == 'INVALID PROMPT!') {
             inputClearAgency();
         } else {
