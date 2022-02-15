@@ -81,10 +81,8 @@ class ContaUniversitaria extends ContaBancaria {
 
 //----------------------------------Account Type----------------------------------//
 function inputClearAccount() {
-    if (accountType != '1' && accountType != '2' && accountType != '3') {
-        let inputBoxActive = document.getElementById('inputBoxAccount');
-        inputBoxActive.value = null;
-    }
+    let inputBoxActive = document.getElementById('inputBoxAccount');
+    inputBoxActive.value = null;
 }
 
 function resetAccountInput() {
@@ -116,10 +114,8 @@ inputBoxAccount.addEventListener('keyup', function(event) {
 
 //----------------------------------Client Name----------------------------------//
 function inputClearName() {
-    if (clientName == "Type in the account handler's name." || clientName == "" || clientName == 'INVALID PROMPT!') {
-        let inputBoxActive = document.getElementById('inputBoxName');
-        inputBoxActive.value = null;
-    }
+    let inputBoxActive = document.getElementById('inputBoxName');
+    inputBoxActive.value = null;
 }
 
 function resetNameInput() {
@@ -151,11 +147,9 @@ inputBoxName.addEventListener('keyup', function(event) {
 
 //----------------------------------Agency Number----------------------------------//
 function inputClearAgency() {
-    if (agencyNumber == 0001 || agencyNumber == 'INVALID PROMPT!') {
-        document.getElementById('inputBoxAgency').type = 'number';
-        let inputBoxActive = document.getElementById('inputBoxAgency');
-        inputBoxActive.value = null;
-    }
+    document.getElementById('inputBoxAgency').type = 'number';
+    let inputBoxActive = document.getElementById('inputBoxAgency');
+    inputBoxActive.value = null;
 }
 
 function resetAgencyInput() {
@@ -213,11 +207,9 @@ inputBoxAgency.addEventListener('keyup', function(event) {
 //----------------------------------Account Number----------------------------------//
 
 function inputClearAccountNumber() {
-    if (accountNumber == 250001 || accountNumber == 'INVALID PROMPT!') {
-        document.getElementById('inputBoxAccountNumber').type = 'number';
-        let inputBoxActive = document.getElementById('inputBoxAccountNumber');
-        inputBoxActive.value = null;
-    }
+    document.getElementById('inputBoxAccountNumber').type = 'number';
+    let inputBoxActive = document.getElementById('inputBoxAccountNumber');
+    inputBoxActive.value = null;
 }
 
 function resetAccountNumberInput() {
@@ -256,10 +248,8 @@ inputBoxAccountNumber.addEventListener('keyup', function(event) {
 //----------------------------------Confirmation----------------------------------//
 
 function inputClearConfirmation() {
-
     let inputBoxActive = document.getElementById('inputBoxConfirmation');
     inputBoxActive.value = null;
-
 }
 
 function resetConfirmationInput() {
@@ -301,10 +291,8 @@ function createAccount() {
 //---------------------------Create Account Confirmation-----------------------------//
 
 function inputClearConfirmation2() {
-
     let inputBoxActive = document.getElementById('inputBoxConfirmation2');
     inputBoxActive.value = null;
-
 }
 
 function resetConfirmationInput2() {
